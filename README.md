@@ -16,14 +16,14 @@ Example:
 First, write a function that compares each element to every other element of the list. Return the element if all other elements in the array are larger.
 What is the time complexity for this function?
 
-- #O(n^2) quadratic time
-- #O(1) constant space
+#O(n^2) quadratic time
+#O(1) constant space
 
 ### Phase II
 Now rewrite the function to iterate through the list just once while keeping track of the minimum. What is the time complexity?
 
-- #O(n^2) quadratic time
-- #O(n^2) quadratic space
+#O(n^2) quadratic time
+#O(n^2) quadratic space
 
 ## Largest Contiguous Sub-sum
 You have an array of integers and you want to find the largest contiguous (together in sequence) sub-sum. Find the sums of all contiguous sub-arrays and return the max.
@@ -56,8 +56,8 @@ Write a function that iterates through the array and finds all sub-arrays using 
 
 Discuss the time complexity of this solution.
 
-- #O(n^3) cubic time
-- #O(n^3) cubic space
+#O(n^3) cubic time
+#O(n^3) cubic space
 
 ### Phase II
 Let's make a better version. Write a new function using O(n) time with O(1) memory. Keep a running tally of the largest sum. To accomplish this efficient space complexity, consider using two variables. One variable should track the largest sum so far and another to track the current sum. We'll leave the rest to you.
