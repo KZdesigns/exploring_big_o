@@ -70,10 +70,19 @@ end
 # [3, -7]       # => -4
 # [-7]          # => -7
 
+# O(n)
+# O(1)
 def largest_contiguous_subsum1(list)
+    current = list.first
+    longest = list.first
+
+    (1...list.length).each do |i|
+        current += list[i]
+        longest = current if current > longest
+    end
 
 
-
+    longest
 end
 
 list = [5, 3, -7]
